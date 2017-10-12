@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #bf0c21; }
+
+.web {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: url(../img/bg.png); }
+
+section {
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  overflow-y: scroll;
+  background-size: 32rem 50.4rem; }
+  section .GD {
+    width: 4.5rem;
+    height: 1.9rem;
+    background: url(../img/btn_GD.png) no-repeat;
+    background-size: 4.5rem 1.9rem;
+    position: absolute;
+    top: 1.9rem;
+    left: 2.4rem;
+    border: none; }
+  section .HN {
+    width: 26.75rem;
+    height: 20.4rem;
+    background: url(../img/HN.png) no-repeat;
+    background-size: 26.75rem 20.4rem;
+    margin-left: 2.5rem;
+    margin-top: 4.6rem;
+    position: relative;
+    border: none; }
+    section .HN .city1 {
+      left: 20rem;
+      top: -2.3rem; }
+    section .HN .city2 {
+      left: 8rem;
+      bottom: 3rem; }
+    section .HN div {
+      width: 3.35rem;
+      height: 4.85rem;
+      background: url(../img/place.png) no-repeat;
+      background-size: 100%;
+      color: #bf0c21;
+      position: absolute;
+      text-align: center; }
+      section .HN div p {
+        font-size: 0.7rem; }
+        section .HN div p:first-of-type {
+          padding-top: 0.7rem; }
+        section .HN div p span {
+          font-size: 1rem; }
+  @media screen and (max-width: 320px) {
+    section .HN .city1 {
+      left: 20rem;
+      top: -3rem; }
+    section .HN div {
+      width: 4rem;
+      height: 5.45rem; } }
+  section .num {
+    position: relative;
+    top: -2rem; }
+    section .num p {
+      color: #e7c598;
+      font-size: 1.5rem;
+      text-align: right;
+      padding-right: 1.05rem; }
+      section .num p:nth-of-type(1) span {
+        font-size: 2rem; }
+      section .num p:nth-of-type(2) {
+        font-size: 2rem; }
+  section .text {
+    width: 26.55rem;
+    height: 15.9rem;
+    margin: 0 auto;
+    margin-top: -1rem; }
+    section .text img {
+      width: 100%;
+      height: 100%; }
+  section #btn {
+    width: 15.9rem;
+    height: 2.25rem;
+    background: url(../img/btn9.png) no-repeat;
+    background-size: 15.9rem 2.25rem;
+    display: block;
+    margin: 4rem auto 0;
+    border: none; }
+  section a {
+    display: block;
+    width: 2.05rem;
+    height: 2.05rem;
+    margin-left: 27.2rem;
+    margin-top: -1.5rem;
+    margin-bottom: 1.1rem;
+    background: url(../img/btnreturn.png) no-repeat;
+    background-size: 2.05rem 2.05rem; }
+
+/*# sourceMappingURL=map_HN.css.map */

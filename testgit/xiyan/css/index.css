@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #bf0c21; }
+
+.web {
+  width: 100%;
+  height: 100%;
+  background: url(../img/bg.png);
+  position: relative; }
+  .web #bg {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    position: absolute;
+    z-index: 9999; }
+    .web #bg .box {
+      width: 15rem;
+      height: 9rem;
+      background: #e7c598;
+      position: absolute;
+      left: 50%;
+      top: 10rem;
+      margin-left: -7rem;
+      border-radius: 10px;
+      position: relative; }
+      .web #bg .box .iconfont {
+        width: 2rem;
+        height: 1.7rem;
+        text-align: center;
+        padding-top: 0.5rem;
+        position: absolute;
+        right: 0.2rem;
+        top: 0.3rem;
+        font-size: 1.25rem;
+        background: #bf0c21;
+        border-radius: 50%;
+        color: #e7c598; }
+      .web #bg .box .p2 {
+        text-align: center;
+        color: #BF0C21;
+        padding-top: 1rem; }
+      .web #bg .box .p3 {
+        width: 80%;
+        height: 2rem;
+        background: #bf0c21;
+        margin: 0.5rem auto;
+        text-align: center;
+        color: #e7c598;
+        display: block; }
+        .web #bg .box .p3 span {
+          display: inline-block;
+          padding-top: 0.3rem; }
+  .web .sor {
+    width: 10.3rem;
+    height: 2.05rem;
+    position: absolute;
+    top: 7.75rem;
+    left: 10.8rem; }
+    .web .sor img {
+      width: 100%;
+      height: 100%; }
+  .web .font {
+    width: 16.4rem;
+    height: 10.35rem;
+    position: absolute;
+    top: 10rem;
+    left: 7.3rem; }
+    .web .font img {
+      width: 100%;
+      height: 100%; }
+  .web .img {
+    width: 18.4rem;
+    height: 3.35rem;
+    position: absolute;
+    top: 22.25rem;
+    left: 6.3rem;
+    line-height: 2.5rem; }
+    .web .img img {
+      width: 100%;
+      height: 100%; }
+
+/*# sourceMappingURL=index.css.map */

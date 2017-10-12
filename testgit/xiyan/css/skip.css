@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #bf0c21; }
+
+.web {
+  width: 100%;
+  height: 100%;
+  background: url(../img/bg.png);
+  /*color: yellow;*/ }
+  .web .content {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    font-size: 0.7rem; }
+    .web .content .img {
+      margin-top: 1rem;
+      margin-left: 2rem;
+      width: 15.4rem;
+      height: 2.35rem;
+      display: inline-block; }
+      .web .content .img img {
+        width: 100%;
+        height: 100%; }
+      .web .content .img a {
+        list-style-type: none; }
+    .web .content .iconfont {
+      width: 5rem;
+      height: 3rem;
+      text-align: center;
+      font-size: 2rem;
+      background: #e7c598;
+      border-radius: 50%;
+      color: #bf0c21;
+      margin-left: 3rem; }
+    .web .content h2 {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      color: #e7c598; }
+    .web .content p {
+      line-height: 1.2rem;
+      color: #e7c598; }
+
+/*# sourceMappingURL=skip.css.map */

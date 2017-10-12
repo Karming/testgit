@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  background: #bf0c21; }
+
+.web {
+  overflow: hidden;
+  width: 100%;
+  background: url(../img/bg.png); }
+  .web section {
+    width: 100%;
+    overflow-y: scroll;
+    background-size: 32rem 50.4rem;
+    z-index: 2; }
+    .web section h3 {
+      font-size: 1.6rem;
+      color: #e7c598;
+      text-align: center;
+      margin-top: 1.3rem; }
+  .web .seat {
+    width: 19.5rem;
+    margin: 0 auto; }
+    .web .seat .mostly {
+      transition: all 300ms;
+      transform: scale(1) translateY(0%); }
+    .web .seat .mostly .table {
+      margin: 4.5rem auto 0;
+      width: 6.1rem;
+      height: 6.1rem;
+      border-radius: 50%;
+      background: #e7c598;
+      position: relative;
+      text-align: center;
+      line-height: 6.1rem;
+      font-size: 1.1rem;
+      color: #bf0c21;
+      box-shadow: 0.1rem 0.05rem #000000; }
+      .web .seat .mostly .table ul li {
+        width: 2.4rem;
+        height: 2.4rem;
+        border-radius: 50%;
+        background: url(../img/ren.jpg) no-repeat;
+        overflow: hidden;
+        background-size: 100% 100%;
+        position: absolute;
+        box-shadow: 0.1rem 0.05rem #000000; }
+      .web .seat .mostly .table ul li:nth-of-type(1) {
+        top: -2.8rem;
+        left: 1.9rem; }
+      .web .seat .mostly .table ul li:nth-of-type(2) {
+        top: -0.5rem;
+        left: -2.25rem; }
+      .web .seat .mostly .table ul li:nth-of-type(3) {
+        top: 4.2rem;
+        left: -2.25rem; }
+      .web .seat .mostly .table ul li:nth-of-type(4) {
+        bottom: -2.8rem;
+        left: 1.9rem; }
+      .web .seat .mostly .table ul li:nth-of-type(6) {
+        top: -0.5rem;
+        right: -2.25rem; }
+      .web .seat .mostly .table ul li:nth-of-type(5) {
+        top: 4.2rem;
+        right: -2.25rem; }
+    .web .seat .minor {
+      width: 50%;
+      float: left; }
+      .web .seat .minor .table {
+        margin: 5.5rem auto 0;
+        width: 4.3rem;
+        height: 4.3rem;
+        border-radius: 50%;
+        background: #e7c598;
+        position: relative;
+        text-align: center;
+        line-height: 4.3rem;
+        font-size: 0.9rem;
+        color: #bf0c21;
+        box-shadow: 0.1rem 0.05rem #000000; }
+        .web .seat .minor .table ul li {
+          width: 1.75rem;
+          height: 1.75rem;
+          border-radius: 50%;
+          background: url(../img/ren.jpg) no-repeat;
+          overflow: hidden;
+          background-size: 100% 100%;
+          position: absolute;
+          box-shadow: 0.1rem 0.05rem #000000; }
+        .web .seat .minor .table ul li:nth-of-type(1) {
+          top: -2.1rem;
+          left: 1.3rem; }
+        .web .seat .minor .table ul li:nth-of-type(2) {
+          top: -0.4rem;
+          left: -1.65rem; }
+        .web .seat .minor .table ul li:nth-of-type(3) {
+          top: 3rem;
+          left: -1.65rem; }
+        .web .seat .minor .table ul li:nth-of-type(4) {
+          bottom: -2.1rem;
+          left: 1.3rem; }
+        .web .seat .minor .table ul li:nth-of-type(6) {
+          top: -0.4rem;
+          right: -1.65rem; }
+        .web .seat .minor .table ul li:nth-of-type(5) {
+          top: 3rem;
+          right: -1.65rem; }
+      .web .seat .minor .add {
+        background: url(../img/clone.jpg) no-repeat;
+        background-size: 100%; }
+  .web .clearfix:after {
+    content: '';
+    display: block;
+    clear: both; }
+  .web input {
+    width: 15.9rem;
+    height: 2.25rem;
+    background: url(../img/btn8.png) no-repeat;
+    background-size: 15.9rem 2.25rem;
+    display: block;
+    margin: 4rem auto 1rem;
+    border: none; }
+  .web a {
+    display: block;
+    width: 2.05rem;
+    height: 2.05rem;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    background: url(../img/btnreturn.png) no-repeat;
+    background-size: 2.05rem 2.05rem; }
+  .web .other {
+    font-size: 1.3rem;
+    color: #e7c598;
+    text-align: center;
+    margin-top: 4.3rem; }
+    .web .other .other_num {
+      display: inline-block;
+      height: 2rem;
+      width: 2rem;
+      font-size: 1.6rem;
+      color: orange;
+      border-bottom: 0.05rem solid #e7c598; }
+  .web .motai, .web .motai2, .web .motai3 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    background: rgba(106, 0, 1, 0.8);
+    z-index: 1;
+    transition: 200ms; }
+    .web .motai .box, .web .motai2 .box, .web .motai3 .box {
+      width: 20.65rem;
+      height: 12.5rem;
+      background: #e7c598;
+      border-radius: 0.6rem;
+      transition: 300ms;
+      position: absolute;
+      top: 18rem;
+      left: 6.5rem;
+      position: relative; }
+      .web .motai .box p, .web .motai2 .box p, .web .motai3 .box p {
+        font-size: 1.5rem;
+        color: #bf0c21;
+        text-align: center;
+        line-height: 1.25rem;
+        padding-top: 2rem; }
+      .web .motai .box h6, .web .motai2 .box h6, .web .motai3 .box h6 {
+        font-size: 1.5rem;
+        color: #bf0c21;
+        text-align: center;
+        line-height: 2.25rem;
+        margin-top: 1.3rem; }
+      .web .motai .box button, .web .motai2 .box button, .web .motai3 .box button {
+        display: block;
+        margin: 0.7rem auto 0;
+        width: 11.2rem;
+        height: 2rem;
+        color: #e7c598;
+        font-size: 1.1rem;
+        text-align: center;
+        line-height: 2rem;
+        background: #bf0c21;
+        border-radius: 0.5rem;
+        border: none;
+        margin-top: 1rem; }
+      .web .motai .box .friend, .web .motai2 .box .friend, .web .motai3 .box .friend {
+        width: 15rem; }
+      .web .motai .box input:last-of-type, .web .motai2 .box input:last-of-type, .web .motai3 .box input:last-of-type {
+        width: 1.8rem;
+        height: 1.8rem;
+        border-radius: 50%;
+        position: absolute;
+        right: 0.8rem;
+        top: -3.25rem;
+        background: url(../img/btnclose.png) no-repeat;
+        background-size: 1.8rem 1.8rem;
+        border: none; }
+  .web .motai2 .click {
+    width: 100%;
+    height: 100%;
+    background: transparent; }
+  .web .motai2 .info {
+    width: 100%;
+    position: absolute;
+    bottom: 5rem; }
+  .web .motai2 h4 {
+    font-size: 1.3rem;
+    color: #e7c598;
+    text-align: center; }
+    .web .motai2 h4 .other_num {
+      display: inline-block;
+      padding: 0.9rem;
+      padding-bottom: 0;
+      font-size: 1.6rem;
+      color: orange;
+      border-bottom: 0.1rem solid #e7c598; }
+  .web .motai2 a {
+    display: block;
+    width: 2.05rem;
+    height: 2.05rem;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    background: url(../img/btnreturn.png) no-repeat;
+    background-size: 2.05rem 2.05rem; }
+  .web .motai3 .box h6 {
+    font-size: 1.6rem;
+    margin-top: 4rem; }
+  .web .motai3 .box button {
+    height: 3.4rem;
+    line-height: 1.5rem; }
+  .web .transition {
+    transform: translateX(0%);
+    z-index: 3; }
+    .web .transition .box_tran {
+      transform: translateY(0%); }
+  .web .seat .toBig1 {
+    transform: scale(2.2); }
+  .web .seat .toBig {
+    transform: scale(2.8); }
+  .web .seat .toAuto {
+    float: none;
+    margin: 20rem auto 0; }
+  .web .sec {
+    z-index: 998;
+    background: none; }
+
+/*# sourceMappingURL=found.css.map */

@@ -1,0 +1,330 @@
+@charset "utf-8";
+//@import "common";
+$fontsize:20;
+@function r($px){
+    @return $px/$fontsize * 1rem;
+}
+*{
+    margin: 0;
+    padding: 0;   
+}
+html,body{
+//  width: 100%;
+//  height: 100%;
+    background: #bf0c21;
+    
+}
+.web{
+   overflow: hidden;
+   width: 100%;
+       background: url(../img/bg.png);
+   
+   section{
+       width: 100%;
+       overflow-y: scroll;
+
+       background-size:r(640) r(1008) ;
+       z-index: 2;
+        h3{
+           font-size: r(32);
+           color: #e7c598;
+           text-align: center;
+           margin-top: r(26);
+       }
+       
+    }
+       .seat{
+           width: r(390);
+           margin: 0 auto;
+           .mostly{
+               transition: all 300ms;
+               transform: scale(1) translateY(0%);
+           }
+           .mostly{
+               .table{
+                   
+                   margin: r(90) auto 0;
+                   width: r(122);
+                   height: r(122);
+                   border-radius:50% ;
+                   background: #e7c598;
+                   position: relative;
+                   text-align: center;
+                   line-height: r(122);
+                   font-size: r(22);
+                   color: #bf0c21;
+                    box-shadow: r(2) r(1) #000000;
+                   ul{
+                       li{
+                           width: r(48);
+                           height: r(48);
+                           border-radius:50% ;
+                           background: url(../img/ren.jpg) no-repeat;
+                           overflow: hidden;
+                           background-size:100% 100%;
+                           position: absolute;
+                           box-shadow: r(2) r(1) #000000;
+                           
+                       }
+                       li:nth-of-type(1){
+                           top: r(-56);
+                           left:r(38)
+                       }
+                        li:nth-of-type(2){
+                           top: r(-10);
+                           left:r(-45)
+                       }
+                        li:nth-of-type(3){
+                           top: r(84);
+                           left:r(-45)
+                       }
+                        li:nth-of-type(4){
+                           bottom: r(-56);
+                           left:r(38)
+                       }
+                        li:nth-of-type(6){
+                           top: r(-10);
+                           right:r(-45)
+                       }
+                        li:nth-of-type(5){
+                           top: r(84);
+                           right:r(-45)
+                       }
+                   }
+               }           
+           }
+           .minor{
+              width: 50%;
+              float: left;
+               .table{
+                   margin: r(110) auto 0;
+                   width: r(86);
+                   height: r(86);
+                   border-radius:50% ;
+                   background: #e7c598;
+                   position: relative;
+                   text-align: center;
+                   line-height: r(86);
+                   font-size: r(18);
+                   color: #bf0c21;
+                    box-shadow: r(2) r(1) #000000;
+                   ul{
+                       li{
+                           width: r(35);
+                           height: r(35);
+                           border-radius:50% ;
+                           background: url(../img/ren.jpg) no-repeat;
+                           overflow: hidden;
+                           background-size:100% 100%;
+                           position: absolute;
+                           box-shadow: r(2) r(1) #000000;
+                           
+                       }
+                       li:nth-of-type(1){
+                           top: r(-42);
+                           left:r(26)
+                       }
+                        li:nth-of-type(2){
+                           top: r(-8);
+                           left:r(-33)
+                       }
+                        li:nth-of-type(3){
+                           top: r(60);
+                           left:r(-33)
+                       }
+                        li:nth-of-type(4){
+                           bottom: r(-42);
+                           left:r(26)
+                       }
+                        li:nth-of-type(6){
+                           top: r(-8);
+                           right:r(-33)
+                       }
+                        li:nth-of-type(5){
+                           top: r(60);
+                           right:r(-33)
+                       }
+                   }
+               }
+              .add{
+                   background: url(../img/clone.jpg) no-repeat;
+                   background-size:100% ;
+              }
+           }
+    
+       }
+       //清除浮动
+       .clearfix:after {
+          content: '';
+          display: block;
+          clear: both; }
+          
+         input{
+            width: r(318);
+            height: r(45);
+            background: url(../img/btn8.png) no-repeat;
+            background-size:r(318)  r(45);
+            display: block;
+            margin: r(80) auto r(20);
+            border: none;
+        }
+        a{
+            display: block;
+            width: r(41);
+            height: r(41);
+            position: fixed;
+            bottom: r(30);
+            right: r(30);
+            background: url(../img/btnreturn.png) no-repeat;
+            background-size:r(41) r(41) ;
+        }
+//btn_found页面里的设置
+   .other{
+        font-size: r(26);
+         color: #e7c598;
+       text-align: center;
+        margin-top: r(86);
+        .other_num{
+            display: inline-block;
+            height: r(40);
+            width: r(40);
+            font-size: r(32);
+            color: orange;
+            border-bottom: r(1) solid #e7c598;
+        }
+   }
+   //分享朋友圈的弹框和入席的弹框
+    .motai,.motai2,.motai3{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translateX(-100%);
+        background: rgba(106,0,1,.8);
+        z-index: 1;
+        transition: 200ms;
+        .box{
+            width: r(413);
+            height: r(250);
+            background: #e7c598;
+            border-radius: r(12);
+            transition: 300ms;
+            position: absolute;
+            top: r(360);
+            left: r(130);
+            position: relative;
+            p{
+                font-size: r(30);
+                color: #bf0c21;
+                text-align: center;
+                line-height: r(25);
+                padding-top: r(40);
+                
+            }
+            h6{
+                font-size: r(30);
+                color: #bf0c21;
+                text-align: center;
+                line-height: r(45);
+                margin-top: r(26);
+            }
+            button{
+                display: block;
+                margin: r(14) auto 0;
+                width: r(224);
+                height: r(40);
+                color: #e7c598;
+                font-size: r(22);
+                text-align: center;
+                line-height: r(40);
+                background: #bf0c21;
+                border-radius: r(10);
+                border: none;
+                margin-top: r(20);
+            }
+            .friend{
+                 width: r(300);
+            }
+            input:last-of-type{
+                width: r(36);
+                height: r(36);
+                border-radius: 50%;
+                position: absolute;
+                right: r(16);
+                top: r(-65);
+                background: url(../img/btnclose.png) no-repeat;
+                background-size:r(36) r(36) ;
+                border: none;
+            }
+        }
+    }
+    .motai2{
+        .click{
+            width: 100%;
+            height: 100%;
+            background: transparent;
+        }
+        .info{
+            width: 100%;
+            position: absolute;
+            bottom: r(100);
+        }
+       h4{
+             font-size: r(26);
+             color: #e7c598;
+            text-align: center;
+    //      margin-top: r(86);
+            .other_num{
+                display: inline-block;
+                padding: r(18);
+                padding-bottom: 0;
+                font-size: r(32);
+                color: orange;
+                border-bottom: r(2) solid #e7c598;
+            }
+       }
+        a{
+            display: block;
+            width: r(41);
+            height: r(41);
+            position: fixed;
+            bottom: r(30);
+            right: r(30);
+            background: url(../img/btnreturn.png) no-repeat;
+            background-size:r(41) r(41) ;
+        }
+    }
+    .motai3 .box{
+        h6{
+            font-size: r(32);
+            margin-top: r(80);
+        }
+        button{
+            height: r(68);
+            line-height: r(30);
+        }
+    }
+    .transition{
+        transform: translateX(0%);
+        z-index: 3;
+        .box_tran{
+            transform: translateY(0%);
+        }
+    }
+    .seat .toBig1{
+        transform: scale(2.2); 
+    }
+    .seat .toBig{
+        transform: scale(2.8); 
+    }
+    .seat .toAuto{
+        float: none;
+        margin:r(400) auto 0;
+    }
+    .sec{
+        z-index: 998;
+        background: none;
+    }
+}
+

@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+$fontsize:20;
+@function r($px){
+    @return $px/$fontsize * 1rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background: #bf0c21;
+    
+}
+.web{
+    width: 100%;
+    height: 100%;
+
+    background: url(../img/bg.png);
+    position: relative;
+    #bg{
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.3);
+        display: none;
+        position: absolute;
+        z-index: 9999;
+        .box{
+            width: 15rem;
+            height: 9rem;
+            background: #e7c598;
+            position: absolute;
+            left: 50%;
+            top: 10rem;
+            margin-left: -7rem;
+            border-radius: 10px;
+            position: relative;
+            .iconfont{
+                width: 2rem;
+                height: 1.7rem;
+                text-align: center;
+                padding-top: 0.5rem;
+                position: absolute;
+                right: 0.2rem;
+                top: 0.3rem;
+                font-size: r(25);
+                background: #bf0c21;
+                border-radius: 50%;
+                color: #e7c598;
+            }
+            .p2{
+                text-align: center;
+                color: #BF0C21;
+                padding-top: 1rem;
+            }
+            .p3{
+                width: 80%;
+                height: 2rem;
+                background: #bf0c21;
+                margin: 0.5rem auto;
+                text-align: center;
+                color: #e7c598;
+                display: block;
+                span{
+                    display: inline-block;
+                    padding-top: 0.3rem;
+                }
+            }
+        }
+    }
+    .sor{
+        width: r(206);
+        height: r(41);
+        position: absolute;
+        top: r(155);
+        left: r(216);
+        img{
+            width: 100%;
+            height: 100%;    
+        }
+     }
+     .font{
+        width: r(328);
+        height: r(207);
+        position: absolute;
+        top: r(200);
+        left: r(146);
+        img{
+            width: 100%;
+            height: 100%;    
+        }
+     }
+     .img{
+        width: r(368);
+        height: r(67);
+        position: absolute;
+        top: r(445);
+        left: r(126);
+        line-height: r(50);
+        img{
+            width: 100%;
+            height: 100%;    
+        }
+     }
+}
+
+
